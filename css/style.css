@@ -1,0 +1,22 @@
+:root{--ac:#22d3ee;--ac2:#8b5cf6}
+body{background:radial-gradient(circle at 15% 0,#173060 0,transparent 45%),radial-gradient(circle at 90% 35%,#2b1659 0,transparent 40%),#0a0f1e;background-attachment:fixed;color:#e6ecff;min-height:100vh;font-family:"Segoe UI",system-ui,sans-serif}
+body:before{content:"";position:fixed;inset:0;z-index:-1;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:44px 44px}
+.glass{background:#ffffff0d;border:1px solid #ffffff1f;backdrop-filter:blur(10px);border-radius:1rem;box-shadow:0 8px 30px #0006;padding:1.25rem;height:100%}
+.navbar{background:#0a0f1ecc!important;backdrop-filter:blur(10px);border-bottom:1px solid #ffffff14}
+.nav-link.active{color:var(--ac)!important}
+.grad{background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn-neon{background:linear-gradient(90deg,var(--ac),var(--ac2));color:#041018;border:0;font-weight:600}
+.btn-neon:hover{color:#041018;filter:brightness(1.1)}
+.ico{font-size:2rem;color:var(--ac)}
+.hero-art{position:relative;width:260px;height:260px;margin:auto;display:grid;place-items:center}
+.hero-art .bi-shield-lock-fill{font-size:9rem;color:var(--ac);filter:drop-shadow(0 0 25px #22d3ee88)}
+.hero-art i.n{position:absolute;width:14px;height:14px;border-radius:50%;background:var(--ac2);box-shadow:0 0 14px var(--ac2);animation:pulse 2.4s infinite}
+@keyframes pulse{50%{transform:scale(1.6);opacity:.5}}
+.progress{height:.8rem;background:#ffffff14}
+.progress-bar{transition:width 1.2s ease;background:linear-gradient(90deg,var(--ac),var(--ac2))}
+.sms{background:#0008;border-left:4px solid var(--ac2);border-radius:.6rem;padding:.8rem 1rem;font-family:monospace}
+mark{background:#f59e0b33;color:#fcd34d;border-bottom:2px solid #f59e0b;padding:0 .15rem;border-radius:3px}
+.tok{cursor:pointer;padding:.1rem .2rem;border-radius:4px;display:inline-block;border:0;background:none;color:inherit;font:inherit;text-align:left}
+.tok:hover{background:#ffffff1a}.tok.good{background:#16a34a55}.tok.bad{background:#dc262655}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--ac)!important;outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
